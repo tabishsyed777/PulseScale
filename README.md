@@ -25,6 +25,10 @@ Or run the container:
 docker compose up --build
 ```
 
+## Screenshots
+
+![PulseScale workload forecast and scaling policy dashboard](assets/pulsescale-dashboard.png)
+
 ## What the demo does
 
 - Generates a repeatable synthetic traffic history with daily cycles, weekday variation, bursts, and noise.
