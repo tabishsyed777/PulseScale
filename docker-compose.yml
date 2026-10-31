@@ -1,0 +1,13 @@
+services:
+  pulsescale:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      PULSE_FORECAST_HORIZON_MINUTES: "15"
+      PULSE_MAX_INTERVAL_RATIO: "0.90"
+      PULSE_DEFAULT_CAPACITY: "40"
+    read_only: true
+    tmpfs:
+      - /tmp
+    restart: unless-stopped
